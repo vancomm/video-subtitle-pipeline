@@ -79,7 +79,7 @@ def main() -> None:
         extract_audio(video_path, audio_path)
 
     model_size = "small"
-    model = WhisperModel(model_size, device="cuda")
+    model = WhisperModel(model_size, device="cpu")
     language, segments = transcribe(audio_path, model)
 
     subtitle_path = video_path.parent / f"sub-{video_path.stem}.{language}.srt"
