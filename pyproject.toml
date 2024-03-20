@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "video-subtitle-pipeline"
+version = "0.1.0"
+description = ""
+authors = ["vancomm <peshekhonov.ip@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+faster-whisper = "^1.0.1"
+ffmpeg-python = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
